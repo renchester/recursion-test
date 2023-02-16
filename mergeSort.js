@@ -13,7 +13,7 @@ const mergeSort = function (arr) {
     return 'Invalid input: Please provide a non-empty array';
   if (arr.length < 2) return arr;
 
-  const halfPoint = Math.ceil(arr.length / 2);
+  const halfPoint = Math.floor(arr.length / 2);
 
   //  Separate array into left and right
   const arr1 = mergeSort(arr.slice(0, halfPoint));
